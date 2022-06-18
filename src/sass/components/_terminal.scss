@@ -1,0 +1,70 @@
+@use "../abstracts/variables";
+
+.terminal {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 100vh;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+  gap: 3.5rem;
+
+  .terminal__header {
+    font-weight: variables.$fw-900;
+    text-transform: uppercase;
+    background-color: variables.$primary-orange;
+    color: variables.$white;
+    padding: 1rem 1.5rem;
+  }
+
+  .terminal__entrance-form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1rem;
+    .terminal__sign {
+      border-radius: 12px;
+      width: 75%;
+      text-align: center;
+      display: block;
+      color: variables.$grayish-white;
+      background-color: variables.$primary-grey;
+      padding: 0.5rem 1rem;
+    }
+  }
+
+  .terminal__desk {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+  }
+
+  .terminal__queue {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(50px, 120px));
+    gap: 0.5rem;
+  }
+
+  .ticket {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    background-color: variables.$grayish-white;
+    padding: 12px;
+    justify-content: center;
+
+    &__text {
+      word-spacing: 3ch;
+      text-align: center;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    &__image {
+      max-height: 40px;
+    }
+  }
+}

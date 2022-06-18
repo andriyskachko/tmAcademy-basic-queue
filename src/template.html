@@ -9,15 +9,53 @@
   <body>
     <div class="terminal">
       <h1 class="terminal__header">Airport</h1>
-      <form id="terminal__entrance-form">
+      <form class="terminal__entrance-form">
         <label for="check-in" class="terminal__sign">Check-In</label>
-        <input type="text" id="check-in" />
+        <input type="text" id="check-in" placeholder="Ticket Number" />
         <button type="submit" class="terminal__button--check-in">Enter</button>
       </form>
       <div class="terminal__desk">
-        <img src="" alt="Terminal Desk" />
-        <div class="terminal__status--open">Open</div>
-        <div class="terminal__queue">... Passengers</div>
+        <div class="">
+          <img src="" alt="Terminal Desk" />
+          <div class="terminal__status--open">Open, * seats left</div>
+        </div>
+        <div class="terminal__queue">
+          <div class="ticket">
+            <img src=<%=require("./images/seat-passenger.svg")%> alt="Passenger"
+            class="ticket__image" />
+            <div class="ticket__text">1</div>
+          </div>
+          <div class="ticket">
+            <img src=<%=require("./images/seat-passenger.svg")%> alt="Passenger"
+            class="ticket__image" />
+            <div class="ticket__text">1</div>
+          </div>
+          <div class="ticket">
+            <img src=<%=require("./images/seat-passenger.svg")%> alt="Passenger"
+            class="ticket__image" />
+            <div class="ticket__text">1</div>
+          </div>
+          <div class="ticket">
+            <img src=<%=require("./images/seat-passenger.svg")%> alt="Passenger"
+            class="ticket__image" />
+            <div class="ticket__text">1</div>
+          </div>
+          <div class="ticket">
+            <img src=<%=require("./images/seat-passenger.svg")%> alt="Passenger"
+            class="ticket__image" />
+            <div class="ticket__text">1</div>
+          </div>
+          <div class="ticket">
+            <img src=<%=require("./images/seat-passenger.svg")%> alt="Passenger"
+            class="ticket__image" />
+            <div class="ticket__text">1434343434323232</div>
+          </div>
+          <div class="ticket">
+            <img src=<%=require("./images/seat-passenger.svg")%> alt="Passenger"
+            class="ticket__image" />
+            <div class="ticket__text">1</div>
+          </div>
+        </div>
       </div>
       <div class="terminal__exit">
         <div class="terminal__current-passenger">
