@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Airport Queue</title>
+  </head>
+  <body>
+    <div class="terminal">
+      <h1 class="terminal__header">Airport</h1>
+      <form id="terminal__entrance-form">
+        <label for="check-in" class="terminal__sign">Check-In</label>
+        <input type="text" id="check-in" />
+        <button type="submit" class="terminal__button--check-in">Enter</button>
+      </form>
+      <div class="terminal__desk">
+        <img src="" alt="Terminal Desk" />
+        <div class="terminal__status--open">Open</div>
+        <div class="terminal__queue">... Passengers</div>
+      </div>
+      <div class="terminal__exit">
+        <div class="terminal__current-passenger">
+          Current Passenger Ticket # - *0*
+        </div>
+        <label for="check-out">Check-Out</label>
+        <input type="submit" value="Exit" id="check-out" />
+      </div>
+    </div>
+  </body>
+</html>
