@@ -1,5 +1,5 @@
-@use "../base/typography";
-@use "../abstracts/variables" as var;
+@use '../base/typography';
+@use '../abstracts/variables' as var;
 
 .terminal {
   min-height: 100vh;
@@ -15,12 +15,12 @@
     background-color: var.$primary-orange;
     color: var.$primary-grey;
     &::after {
-      content: url("../images/airplane.svg");
+      content: url('../images/airplane.svg');
     }
   }
 
   &__status {
-    &--success {
+    &.success {
       padding: 0.5rem;
       box-sizing: border-box;
       background: transparent;
@@ -30,7 +30,7 @@
       justify-content: center;
     }
 
-    &--danger {
+    &.danger {
       padding: 0.5rem;
       box-sizing: border-box;
       background: transparent;
@@ -46,7 +46,7 @@
     color: var.$primary-orange;
     &::after {
       background-color: var.$primary-orange;
-      content: url("../images/arrow-bottom-right.svg");
+      content: url('../images/arrow-bottom-right.svg');
     }
   }
 
@@ -55,7 +55,7 @@
     color: var.$primary-grey;
     &::after {
       background-color: var.$primary-grey;
-      content: url("../images/arrow-top-right.svg");
+      content: url('../images/arrow-top-right.svg');
     }
   }
 
@@ -111,7 +111,7 @@
     background-color: transparent;
 
     &::after {
-      content: "";
+      content: '';
       background-color: var.$bg-info;
       width: 100%;
       z-index: -1;
@@ -133,10 +133,11 @@
 
   &__queue {
     display: grid;
+    align-items: center;
     grid-template-columns: repeat(5, minmax(75px, 150px));
     gap: 2rem;
 
-    .passenger {
+    .ticket {
       border: 1px dotted var.$bg-info;
       padding: 8px;
       overflow: hidden;
@@ -151,4 +152,10 @@
       }
     }
   }
+}
+
+.centered-no-flow {
+  position: absolute;
+  left: 50%;
+  transform: translate(-50%, 0);
 }
