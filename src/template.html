@@ -8,61 +8,41 @@
   </head>
   <body>
     <div class="terminal">
-      <h1 class="terminal__header">Airport</h1>
-      <form class="terminal__entrance-form">
-        <label for="check-in" class="terminal__sign">Check-In</label>
-        <input type="text" id="check-in" placeholder="Ticket Number" />
-        <button type="submit" class="terminal__button--check-in">Enter</button>
-      </form>
-      <div class="terminal__desk">
-        <div class="">
-          <img src="" alt="Terminal Desk" />
-          <div class="terminal__status--open">Open, * seats left</div>
-        </div>
-        <div class="terminal__queue">
-          <div class="ticket">
-            <img src=<%=require("./images/seat-passenger.svg")%> alt="Passenger"
-            class="ticket__image" />
-            <div class="ticket__text">1</div>
-          </div>
-          <div class="ticket">
-            <img src=<%=require("./images/seat-passenger.svg")%> alt="Passenger"
-            class="ticket__image" />
-            <div class="ticket__text">1</div>
-          </div>
-          <div class="ticket">
-            <img src=<%=require("./images/seat-passenger.svg")%> alt="Passenger"
-            class="ticket__image" />
-            <div class="ticket__text">1</div>
-          </div>
-          <div class="ticket">
-            <img src=<%=require("./images/seat-passenger.svg")%> alt="Passenger"
-            class="ticket__image" />
-            <div class="ticket__text">1</div>
-          </div>
-          <div class="ticket">
-            <img src=<%=require("./images/seat-passenger.svg")%> alt="Passenger"
-            class="ticket__image" />
-            <div class="ticket__text">1</div>
-          </div>
-          <div class="ticket">
-            <img src=<%=require("./images/seat-passenger.svg")%> alt="Passenger"
-            class="ticket__image" />
-            <div class="ticket__text">1434343434323232</div>
-          </div>
-          <div class="ticket">
-            <img src=<%=require("./images/seat-passenger.svg")%> alt="Passenger"
-            class="ticket__image" />
-            <div class="ticket__text">1</div>
-          </div>
-        </div>
+      <h1 class="terminal__entrance">GATE ABC</h1>
+      <div class="terminal__status--success">Boarding</div>
+      <div class="terminal__queue">
+        <div class="passenger">Ticket 313213134dsadasdadsadsad</div>
+        <div class="passenger active">Ticket 313213134dsadasdadsadsad</div>
+        <div class="passenger">Ticket 313213134dsadasdadsadsad</div>
+        <div class="passenger">Ticket 313213134dsadasdadsadsad</div>
+        <div class="passenger">Ticket 313213134dsadasdadsadsad</div>
+        <div class="passenger">Ticket 313213134dsadasdadsadsad</div>
+        <div class="passenger">Ticket 313213134dsadasdadsadsad</div>
+        <div class="passenger">Ticket 313213134dsadasdadsadsad</div>
+        <div class="passenger">Ticket 313213134dsadasdadsadsad</div>
+        <div class="passenger">Ticket 313213134dsadasdadsadsad</div>
       </div>
-      <div class="terminal__exit">
-        <div class="terminal__current-passenger">
-          Current Passenger Ticket # - *0*
+      <div class="terminal__actions">
+        <div class="terminal__action-group">
+          <div class="terminal__check-in">Check-In</div>
+          <input
+            type="text"
+            inputmode="numeric"
+            placeholder="Your ticket Number"
+            id="check-in"
+            class="terminal__input"
+          />
+          <button type="button" class="terminal__btn">
+            <div class="terminal__btn__text">Enter</div>
+          </button>
         </div>
-        <label for="check-out">Check-Out</label>
-        <input type="submit" value="Exit" id="check-out" />
+        <div class="terminal__action-group">
+          <div class="terminal__check-out">Check-Out</div>
+          <div class="terminal__current-ticket">Ticket # 34</div>
+          <button type="button" class="terminal__btn">
+            <div class="terminal__btn__text">Get through</div>
+          </button>
+        </div>
       </div>
     </div>
   </body>
