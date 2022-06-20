@@ -1,0 +1,30 @@
+@use '../abstracts/colors';
+
+.terminal__heading {
+  padding: 1rem;
+  background-color: colors.$primary-orange;
+  color: colors.$primary-grey;
+  //   &::after {
+  //     content: url('../images/airplane.svg');
+  //   }
+}
+
+.terminal__action-heading {
+  background-color: colors.$primary-grey;
+  color: colors.$primary-orange;
+  width: 250px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  &--reverse {
+    background-color: colors.$primary-orange;
+    color: colors.$primary-grey;
+    width: 250px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}

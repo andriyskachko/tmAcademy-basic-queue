@@ -1,0 +1,9 @@
+@use '../abstracts/colors';
+
+.terminal__current-ticket {
+  width: 150px;
+  text-align: center;
+  background-color: colors.$greyish;
+  color: colors.$greyish-white;
+  padding: 7px 15px;
+}

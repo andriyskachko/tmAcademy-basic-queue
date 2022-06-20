@@ -1,2 +1,13 @@
-@use "./base/reset";
-@use "./components/terminal";
+@use './base/reset';
+
+@use './components/button';
+@use './components/input';
+@use './components/current-ticket';
+@use './components/heading';
+@use './components/status';
+@use './components/ticket';
+@use './components/check-in';
+@use './components/check-out';
+@use './components/actions';
+@use './layout/terminal';
+@use './layout/queue';

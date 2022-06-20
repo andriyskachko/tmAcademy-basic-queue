@@ -1,0 +1,13 @@
+.terminal__actions {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+  justify-content: center;
+
+  .terminal__action {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+}

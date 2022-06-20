@@ -1,0 +1,5 @@
+.terminal__queue {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(75px, 150px));
+  gap: 2rem;
+}

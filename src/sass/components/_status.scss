@@ -1,0 +1,15 @@
+@use '../abstracts/colors';
+
+.terminal__status {
+  padding: 0.5rem;
+  box-sizing: border-box;
+  background: transparent;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2.5px dotted colors.$bg-success;
+
+  &.danger {
+    border: 2.5px dotted colors.$bg-danger;
+  }
+}

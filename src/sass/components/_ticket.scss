@@ -1,0 +1,15 @@
+@use '../abstracts/colors';
+.ticket {
+  border: 1px dotted colors.$bg-info;
+  padding: 8px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  background-color: colors.$greyish;
+  color: colors.$greyish-white;
+
+  &:first-child {
+    border: 2.5px dotted colors.$bg-success;
+    background: transparent;
+    color: inherit;
+  }
+}

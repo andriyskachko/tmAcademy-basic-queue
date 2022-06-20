@@ -1,8 +1,6 @@
 import './sass/main.scss';
-import View from './View';
-import Model from './Model';
 import Controller from './Controller';
+import Model from './model/Model';
+import View from './view/View';
 
 const app = new Controller(new Model(), new View());
-
-console.log(app);
