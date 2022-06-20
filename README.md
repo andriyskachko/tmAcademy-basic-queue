@@ -62,6 +62,7 @@ npm run start
 - [Sass 7-1 Architecture](https://sass-guidelin.es/)
 - Flexbox
 - CSS Grid
+- [MVC](https://developer.mozilla.org/en-US/docs/Glossary/MVC)
 - [CSS Reset](https://piccalil.li/blog/a-modern-css-reset/)
 - [Webpack](https://webpack.js.org/) - Module bundler
 - [Eslint](https://eslint.org/) - Linter (Airbnb Code Style)
