@@ -59,8 +59,10 @@ npm run start
 
 - Mobile-last Approach 😂
 - [Sass](https://sass-lang.com/) - CSS preprocessor
+- [Sass 7-1 Architecture](https://sass-guidelin.es/)
 - Flexbox
 - CSS Grid
+- [CSS Reset](https://piccalil.li/blog/a-modern-css-reset/)
 - [Webpack](https://webpack.js.org/) - Module bundler
 - [Eslint](https://eslint.org/) - Linter (Airbnb Code Style)
 - [Prettier](https://prettier.io/) - Code Formatter
