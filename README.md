@@ -37,7 +37,7 @@ Additional requirements
 
 ### Build
 
-Create a folder named dist
+Create a dist folder
 
 Run:
 
