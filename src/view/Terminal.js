@@ -45,6 +45,7 @@ function CheckInForm() {
   input.placeholder = 'Your ticket number';
   input.name = 'ticket';
   input.required = true;
+  input.maxLength = 6;
   submitBtn.type = 'submit';
   submitBtn.className = 'terminal__btn';
   submitBtnText.textContent = 'Enter';

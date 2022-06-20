@@ -36,7 +36,7 @@ export default class View {
       this.terminalHeading,
       this.terminalStatus,
       this.queueContainer,
-      this.terminalActionsContainer
+      this.terminalActionsContainer,
     );
     this.root.append(this.terminalContainer);
   }
@@ -66,6 +66,7 @@ export default class View {
   }
 
   bindEnqueue(handler) {
+    this.checkInForm.addEventListener('input', View.formatTicket);
     this.checkInForm.addEventListener('submit', (event) => {
       event.preventDefault();
       const formData = new FormData(this.checkInForm);
@@ -76,5 +77,18 @@ export default class View {
 
   bindDequeue(handler) {
     this.checkOutBtn.addEventListener('click', handler);
+  }
+
+  static formatTicket(event) {
+    const ticket = event.target;
+    const ticketVal = ticket.value;
+    ticket.setCustomValidity('');
+
+    if (!/^\d+$/.test(ticketVal)) {
+      ticket.setCustomValidity(
+        'There are no letters or special characters in ticket number',
+      );
+      ticket.reportValidity();
+    }
   }
 }

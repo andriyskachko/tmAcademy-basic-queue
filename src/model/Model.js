@@ -3,7 +3,7 @@ const MAX_LENGTH = 22;
 export default class Model {
   constructor() {
     this.queue = JSON.parse(localStorage.getItem('queue')) || [];
-    this.status = localStorage.getItem('status');
+    this.status = localStorage.getItem('status') || 'Boarding';
   }
 
   enqueue(data) {
